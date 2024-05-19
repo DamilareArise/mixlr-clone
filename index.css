@@ -1,0 +1,102 @@
+:root, [data-mdb-theme=light] {
+    --mdb-danger-rgb:#ed1c24;
+}
+
+nav{
+    min-height: 90px;
+}
+
+.nav-image{
+    margin-top: -25px;
+}
+
+nav a{
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: #ed1c24;
+}
+
+nav .btn{
+    outline:1px solid rgba(128, 128, 128, 0.315);
+}
+
+.a-btn-nav{
+    color: #ed1c24;
+}
+
+
+nav .btn:hover{
+    outline:1px solid #ed1c24;
+
+}
+
+nav .btn:hover .a-btn-nav{
+    color: black !important;
+}
+
+.carousel-indicators{
+    top: 600px !important;
+}
+
+.carousel-indicators button{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+    background-color: #ed1c24 !important;
+    
+}
+
+
+@media (max-width:1024px) {
+
+    .carousel-indicators{
+        top: 400px !important;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .nav-image{
+        margin-top: 0px;
+    }
+
+    .carousel-indicators{
+        top: 300px !important;
+    }
+    
+}
+
+
+@media (max-width:576px) {
+    nav a{
+        font-size: 16px;
+    }
+
+    nav{
+        padding-top: 10px;
+    }
+
+    .nav-image{
+        margin-top: 0px;
+    }
+    
+
+    nav ul{
+        gap: 10px;
+        justify-content: center;
+        /* padding: 2px; */
+    }
+
+    nav ul .btn{
+        padding: 7px 2px;
+        width: 120px;
+    }
+
+    .carousel-indicators{
+        top: 170px !important;
+    }
+    
+}
