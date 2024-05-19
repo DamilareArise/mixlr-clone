@@ -49,6 +49,78 @@ nav .btn:hover .a-btn-nav{
     
 }
 
+.carousel-item > div{
+    min-height: 400px;
+    width: 50%;
+    margin: auto;
+    background-color: #f1f5f9;
+    font-size: 20px;
+    /* position: relative; */
+    border-radius: 15px;
+}
+
+.carousel-item > div img{
+    width: 70px;
+}
+
+.carousel-indicators2{
+    top: 500px !important;
+}
+
+.carousel-item > div::before{
+    content: "\f10d"; /* Unicode for 'fa-quote-left' icon */
+    font-family: "Font Awesome 5 Free"; /* Ensure the correct Font Awesome version */
+    font-weight: 600; /* Font Awesome 5 uses different weights */
+    color: #ed1c24;
+    font-size: 70px !important;
+    left: 300px;
+    position: absolute;
+    top: -50px;
+}
+
+.carousel-item > div::after{
+    content: "\f10e"; /* Unicode for 'fa-quote-left' icon */
+    font-family: "Font Awesome 5 Free"; /* Ensure the correct Font Awesome version */
+    font-weight: 600; /* Font Awesome 5 uses different weights */
+    color: #ed1c24;
+    font-size: 70px !important;
+    position: absolute;
+    bottom: -50px;
+    right: 300px;
+}
+
+.carousel-inner{
+    height: 500px;
+}
+
+.available-div{
+    margin-top: 90px;
+}
+
+.features img{
+    width: 400px;
+}
+
+.feature-box1{
+    padding: 10px 50px;
+}
+
+.feature-box1 h1{
+    font-size: 3rem;
+}
+
+.feature-box1 p{
+    font-size: 1.6rem;
+}
+
+.footer-links a{
+    color: black;
+    margin-left: 10px;
+}
+
+.footer-links a:hover{
+    color: #ed1c24;
+}
 
 @media (max-width:1024px) {
 
@@ -56,6 +128,24 @@ nav .btn:hover .a-btn-nav{
         top: 400px !important;
     }
     
+    .carousel-item > div::after{
+        right: 220px;
+    }
+
+    .carousel-item > div::before{
+        left: 220px;
+    }
+
+    .carousel-indicators2{
+        top: 500px !important;
+    }
+
+    .available-div{
+        margin-top: -50px;
+    }
+    .features{
+        width: 90% !important;
+    }
 }
 
 @media (max-width:768px) {
@@ -66,6 +156,45 @@ nav .btn:hover .a-btn-nav{
     .carousel-indicators{
         top: 300px !important;
     }
+
+    .carousel-item > div{
+        min-height: 400px;
+        width: 80%;
+        font-size: 18px;
+    }
+    
+    .carousel-indicators2{
+        top: 500px !important;
+    }
+
+    .carousel-item > div::after{
+        right: 50px;
+    }
+
+    .carousel-item > div::before{
+        left: 50px;
+    }
+
+    .available-div{
+        margin-top: -200px;
+    }
+
+    .features img{
+        width: 300px;
+    }
+    
+    .feature-box1{
+        padding: 10px 50px;
+    }
+    
+    .feature-box1 h1{
+        font-size: 1.7rem;
+    }
+    
+    .feature-box1 p{
+        font-size: 1.2em;
+    }
+    
     
 }
 
@@ -98,5 +227,30 @@ nav .btn:hover .a-btn-nav{
     .carousel-indicators{
         top: 170px !important;
     }
+
+    .carousel-item > div{
+        min-height: 400px;
+        width: 100%;
+        font-size: 16px !important;
+    }
     
+    .carousel-indicators2{
+        top: 450px !important;
+    }
+
+    .carousel-item > div::after{
+        right: 0px;
+    }
+
+    .carousel-item > div::before{
+        left: 0px;
+    }
+
+    .available-div{
+        margin-top: -300px;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
 }
